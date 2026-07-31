@@ -14,7 +14,7 @@ import {
   X,
 } from 'lucide-react'
 
-const WHATSAPP = 'https://wa.me/5548988776092?text=Olá!%20Vim%20pelo%20site%20da%20TMZ%20Conect%20e%20quero%20conversar%20sobre%20uma%20solução.'
+const WHATSAPP = 'https://wa.me/5548988776092?text=Olá!%20Vim%20pelo%20site%20da%20TMZ%20Co.%20e%20quero%20conversar%20sobre%20uma%20solução.'
 
 const services = [
   {
@@ -117,7 +117,7 @@ export function FutureSite() {
     <div className="future-site">
       <a className="skip-link" href="#conteudo">Ir para o conteúdo</a>
       <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
-        <a href="#inicio" className="brand-word" aria-label="TMZ Conect — início">TMZ<span>/</span>Conect</a>
+        <a href="#inicio" className="brand-word" aria-label="TMZ Co. — início">TMZ <span>Co.</span></a>
         <nav className="desktop-nav" aria-label="Navegação principal">
           <a href="#solucoes">Soluções</a>
           <a href="#metodo">Método</a>
@@ -141,7 +141,7 @@ export function FutureSite() {
         <section id="inicio" className="hero-section">
           <video className="hero-video" src="/media/hero-robot.mp4" autoPlay muted loop playsInline preload="auto" aria-label="Robô em movimento representando a integração entre tecnologia e indústria" />
           <div className="hero-overlay" aria-hidden="true" />
-          <img className="hero-logo" src="/media/tmz-logo.png" alt="TMZ Conect" />
+          <div className="hero-logo" aria-hidden="true">TMZ <span>Co.</span></div>
           <div className="hero-content">
             <motion.p className="eyebrow" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15 }}>25+ anos transformando operações</motion.p>
             <motion.h1 initial={{ opacity: 0, y: 32 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.22, ease: [0.2, 0.8, 0.2, 1] }}>
@@ -219,11 +219,11 @@ export function FutureSite() {
 
         <section id="contato" className="contact-section">
           <div><p className="section-index">VAMOS OLHAR MAIS FUNDO?</p><h2>Seu próximo avanço pode estar escondido no processo de hoje.</h2></div>
-          <a className="contact-circle" href={WHATSAPP} target="_blank" rel="noreferrer" aria-label="Conversar com a TMZ Conect pelo WhatsApp"><MessageCircle /><span>Iniciar<br />diagnóstico</span><ArrowRight /></a>
+          <a className="contact-circle" href={WHATSAPP} target="_blank" rel="noreferrer" aria-label="Conversar com a TMZ Co. pelo WhatsApp"><MessageCircle /><span>Iniciar<br />diagnóstico</span><ArrowRight /></a>
         </section>
       </main>
 
-      <footer><a href="#inicio" className="brand-word">TMZ<span>/</span>Conect</a><p>Sistemas · Automação industrial · Robótica · Inteligência artificial</p><p>Florianópolis, SC</p><p>© {new Date().getFullYear()} TMZ Conect</p></footer>
+      <footer><a href="#inicio" className="brand-word">TMZ <span>Co.</span></a><p>Sistemas · Automação industrial · Robótica · Inteligência artificial</p><p>Florianópolis, SC</p><p>© {new Date().getFullYear()} TMZ Co.</p></footer>
     </div>
   )
 }

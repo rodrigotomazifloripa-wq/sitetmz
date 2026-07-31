@@ -33,7 +33,7 @@ button { color: inherit; }
 .site-header { position: fixed; inset: 0 0 auto; z-index: 100; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: 88px; padding: 0 max(24px, calc((100vw - var(--container)) / 2)); border-bottom: 1px solid transparent; transition: .28s var(--ease); }
 .site-header.is-scrolled { height: 68px; background: rgba(7, 10, 12, .86); backdrop-filter: blur(16px); border-color: var(--border); }
 .brand-word { font-size: 16px; font-weight: 600; letter-spacing: -.04em; text-transform: uppercase; }
-.brand-word span { color: var(--cyan); margin: 0 3px; }
+.brand-word span { color: var(--cyan); }
 .desktop-nav { display: flex; gap: 32px; }
 .desktop-nav a { color: #c5ccce; font-size: 13px; transition: color .16s; }
 .desktop-nav a:hover { color: var(--white); }
@@ -50,9 +50,11 @@ button { color: inherit; }
 .hero-section { position: relative; min-height: 100svh; display: flex; align-items: flex-end; isolation: isolate; background: var(--ink-950); }
 .hero-video { position: absolute; inset: 0; z-index: -4; width: 100%; height: 100%; object-fit: cover; filter: saturate(.72) contrast(1.12); }
 .hero-overlay { position: absolute; inset: 0; z-index: -3; background: linear-gradient(90deg, rgba(4, 8, 10, .93) 0%, rgba(4, 8, 10, .63) 44%, rgba(4, 8, 10, .17) 74%), linear-gradient(0deg, var(--ink-950) 0%, transparent 28%, rgba(0,0,0,.2) 100%); }
-.hero-logo { position: absolute; z-index: -2; top: 10%; right: -2%; width: min(54vw, 840px); opacity: .18; mix-blend-mode: screen; filter: saturate(.75) contrast(1.2); -webkit-mask-image: radial-gradient(ellipse at center, #000 45%, transparent 76%); mask-image: radial-gradient(ellipse at center, #000 45%, transparent 76%); }
+.hero-logo { position: absolute; z-index: -2; top: 20%; right: -1%; color: rgba(240, 242, 239, .11); font-size: clamp(7rem, 15vw, 14rem); font-weight: 300; line-height: .8; letter-spacing: -.09em; white-space: nowrap; text-transform: uppercase; }
+.hero-logo span { color: rgba(82, 233, 245, .18); }
 .hero-content { width: min(var(--container), calc(100% - 48px)); margin: 0 auto; padding: 180px 0 92px; }
 .eyebrow, .section-index { margin: 0 0 22px; color: var(--cyan); font-size: 11px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; }
+.hero-content .eyebrow { font-size: 13px; letter-spacing: .16em; }
 .hero-content h1 { max-width: 980px; margin: 0; font-size: clamp(3.4rem, 7.7vw, 7.7rem); line-height: .92; letter-spacing: -.065em; font-weight: 300; text-transform: uppercase; }
 .hero-content h1 em { color: var(--cyan); font-style: normal; }
 .hero-lead { max-width: 630px; margin: 32px 0 38px; color: #c5ccce; font-size: clamp(17px, 1.5vw, 21px); line-height: 1.6; }
@@ -127,7 +129,7 @@ footer p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.55; t
   .menu-button svg { width: 23px; }
   .mobile-nav { position: absolute; top: 100%; left: 16px; right: 16px; display: flex; flex-direction: column; padding: 20px; background: var(--ink-850); border: 1px solid var(--border); }
   .mobile-nav a { min-height: 48px; display: flex; align-items: center; border-bottom: 1px solid var(--border); }
-  .hero-logo { width: 90vw; top: 18%; right: -24%; opacity: .14; }
+  .hero-logo { top: 24%; right: -18%; font-size: clamp(7rem, 26vw, 11rem); }
   .hero-proof { display: none; }
   .statement-grid, .section-heading, .industrial-story, .presentation-story, .experience-section, .contact-section { grid-template-columns: 1fr; }
   .statement-grid, .section-heading, .industrial-story, .presentation-story, .experience-section { gap: 44px; }
@@ -148,6 +150,7 @@ footer p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.55; t
   .hero-overlay { background: linear-gradient(0deg, var(--ink-950) 0%, rgba(4,8,10,.6) 55%, rgba(4,8,10,.75) 100%); }
   .hero-content { width: calc(100% - 40px); padding: 150px 0 70px; }
   .hero-content h1 { font-size: clamp(3.1rem, 15vw, 5.1rem); }
+  .hero-content .eyebrow { font-size: 12px; line-height: 1.5; }
   .hero-lead { margin-top: 28px; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 16px; }
   .button-primary { width: 100%; }
