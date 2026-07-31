@@ -222,7 +222,25 @@ export function FutureSite() {
         </section>
       </main>
 
-      <footer><a href="#inicio" className="brand-word">TMZ <span>Co.</span></a><p>Sistemas · Automação industrial · Robótica · Inteligência artificial</p><p>Florianópolis, SC</p><p>© {new Date().getFullYear()} TMZ Co.</p></footer>
+      <footer className="site-footer">
+        <div className="footer-brand">
+          <a href="#inicio" className="brand-word">TMZ <span>Co.</span></a>
+          <p>Sistemas · Automação industrial<br />Robótica · Inteligência artificial</p>
+        </div>
+        <div className="footer-contact">
+          <p className="footer-label">Contato</p>
+          <a href="https://wa.me/5548988776092" target="_blank" rel="noreferrer">+55 48 98877-6092</a>
+          <a href="mailto:contato@tmzconect.com">contato@tmzconect.com</a>
+        </div>
+        <div className="footer-location">
+          <p className="footer-label">Base</p>
+          <p>Florianópolis, SC<br />Atendimento em todo o Brasil</p>
+        </div>
+        <div className="footer-legal">
+          <p>© {new Date().getFullYear()} TMZ Co.</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+      </footer>
     </div>
   )
 }

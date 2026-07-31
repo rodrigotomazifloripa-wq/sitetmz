@@ -117,8 +117,16 @@ button { color: inherit; }
 .contact-circle span { font-size: 17px; font-weight: 600; text-transform: uppercase; line-height: 1.2; }
 .contact-circle svg:last-child { width: 20px; }
 
-footer { min-height: 210px; display: grid; grid-template-columns: 2fr 4fr 2fr 2fr; gap: 32px; align-items: end; padding: 60px max(24px, calc((100vw - var(--container)) / 2)); background: var(--ink-950); border-top: 1px solid var(--border); }
-footer p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.55; text-transform: uppercase; letter-spacing: .06em; }
+.site-footer { min-height: 250px; display: grid; grid-template-columns: 1.5fr 1.25fr 1fr 1fr; gap: 64px; align-items: start; padding: 68px max(24px, calc((100vw - var(--container)) / 2)) 54px; background: var(--ink-950); border-top: 1px solid var(--border); }
+.site-footer > div { min-width: 0; }
+.site-footer p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.65; text-transform: uppercase; letter-spacing: .06em; }
+.footer-brand { display: flex; flex-direction: column; align-items: flex-start; gap: 22px; }
+.footer-brand .brand-word { font-size: 20px; }
+.footer-contact, .footer-location, .footer-legal { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding-top: 2px; }
+.site-footer .footer-label { margin-bottom: 12px; color: var(--paper); font-size: 10px; font-weight: 600; letter-spacing: .16em; }
+.footer-contact a { min-height: 28px; display: inline-flex; align-items: center; color: #cbd2d4; font-size: 13px; transition: color .16s; }
+.footer-contact a:hover { color: var(--cyan); }
+.footer-legal { align-self: end; }
 
 @media (max-width: 900px) {
   .desktop-nav, .desktop-cta { display: none; }
@@ -137,7 +145,8 @@ footer p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.55; t
   .process-list article { grid-template-columns: 60px 1fr; }
   .process-list p { grid-column: 2; }
   .contact-circle { justify-self: start; width: 220px; }
-  footer { grid-template-columns: 1fr 1fr; }
+  .site-footer { grid-template-columns: 1.4fr 1fr 1fr; gap: 48px 32px; }
+  .footer-legal { grid-column: 1 / -1; align-self: auto; padding-top: 28px; border-top: 1px solid var(--border); }
 }
 
 @media (max-width: 560px) {
@@ -162,7 +171,10 @@ footer p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.55; t
   .experience-number { font-size: 10rem; }
   .contact-section { min-height: 620px; }
   .contact-circle { width: 190px; }
-  footer { grid-template-columns: 1fr; align-items: start; padding: 60px 20px; }
+  .site-footer { min-height: 0; grid-template-columns: 1fr; gap: 38px; align-items: start; padding: 56px 20px 40px; }
+  .footer-brand { gap: 16px; }
+  .footer-contact, .footer-location, .footer-legal { padding-top: 0; }
+  .footer-legal { grid-column: auto; margin-top: 8px; padding-top: 28px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
