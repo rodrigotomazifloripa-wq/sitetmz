@@ -141,7 +141,6 @@ export function FutureSite() {
         <section id="inicio" className="hero-section">
           <video className="hero-video" src="/media/hero-robot.mp4" autoPlay muted loop playsInline preload="auto" aria-label="Robô em movimento representando a integração entre tecnologia e indústria" />
           <div className="hero-overlay" aria-hidden="true" />
-          <div className="hero-logo" aria-hidden="true">TMZ <span>Co.</span></div>
           <div className="hero-content">
             <motion.p className="eyebrow" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15 }}>25+ anos transformando operações</motion.p>
             <motion.h1 initial={{ opacity: 0, y: 32 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.22, ease: [0.2, 0.8, 0.2, 1] }}>
